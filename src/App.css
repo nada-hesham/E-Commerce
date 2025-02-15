@@ -1,0 +1,27 @@
+.active{
+
+    color: #4fa74f;
+
+  }
+
+  .line::after{
+    content: " ";
+    width:140px;
+    height: 2px;
+    background-color:#4fa74f;
+    position: absolute;
+    top:60px;
+   /* left: 700px; */
+   left:45.5%
+  }
+ 
+  .line::before{
+    content: " ";
+    width:100px;
+    height: 2px;
+    background-color:#4fa74f;
+    position: absolute;
+    top:70px;
+   /* left:720px; */
+   left:46.5%
+  }

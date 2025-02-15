@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .btn {
+      @apply  p-3 my-4 bg-[#4fa74f] text-white rounded-md border border-[#4fa74f] hover:bg-green-700
+    }
+}
