@@ -105,7 +105,7 @@ export default function ConTextCartProvider({children}) {
         headers:{
           token
         }
-      }).then((res)=>{
+      }).then(()=>{
         setTotalCartPrice(0);
       setNumOfCartItems(0);
       setProductCart([])

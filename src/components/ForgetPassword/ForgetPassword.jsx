@@ -1,6 +1,6 @@
 import axios from 'axios'
 import { useFormik } from 'formik'
-import React, { useState } from 'react'
+import  react ,{ useState } from 'react'
 import { Helmet } from 'react-helmet'
 import {  useNavigate } from 'react-router-dom'
 import * as Yup from 'yup'
@@ -35,7 +35,7 @@ let navigate = useNavigate();
       }
     }).catch((error)=>{
       console.log(error)
-      setErrorMessage(res.data.statusMsg)
+      setErrorMessage(error.data.statusMsg)
     }).finally(()=>{
       setLoadingBtn(false)
     })
@@ -66,7 +66,7 @@ let navigate = useNavigate();
     
     }).catch((error)=>{
       console.log(error)
-      setErrorMessage(res.data.statusMsg)
+      setErrorMessage(error.data.statusMsg)
     }).finally(()=>{
       setLoadingBtn(false)
     })
